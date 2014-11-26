@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<title>Blog</title>
+</head>
+<body>
+	<h1>Blog</h1>
+	{% for entrada in object_list %}
+		<h2><a href="/entrada/{{entrada.slug}}">{{entrada.titulo}}</a></h2>
+		<p>{{entrada.contenido}}</p>
+	{% endfor %}
+
+</body>
+</html>
